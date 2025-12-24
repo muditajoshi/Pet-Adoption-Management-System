@@ -6,6 +6,8 @@ const userRoutes =require("./routes/userRoutes");
 const petRoutes = require("./routes/petRoutes");
 const adoptionRoutes = require("./routes/adoptionRoutes");
 const morgan = require("morgan");
+const connectDB = require("./utils/config");
+connectDB();
 
 const app = express();
 app.use(cors());
