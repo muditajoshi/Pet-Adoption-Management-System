@@ -22,6 +22,4 @@ app.use("/api/auth", userRoutes);
 app.use("/api/pet", petRoutes);
 app.use("/api/adoption", adoptionRoutes);
 
-app.listen(PORT, () => {
-  console.log("Server Running");
-});
+module.exports = app;
